@@ -13,7 +13,7 @@ class InfrahubValidateFirewall(InfrahubCheck):
     query = "firewall_config"
 
     def validate(self, data: Any) -> None:
-        """Validate firewall."""
+        """Validate firewalls."""
         errors: list[str] = []
         data = get_data(data)
         # Display all errors
